@@ -23,10 +23,14 @@
           <header class="header">
             <div class="pizza-header-content">
               <div class="timeleft">
-                <p>15</p>
+                <p class="timer-left-box">Time <span class="timer">15</span></p>
               </div>
-              <div class="food-resipe">pizza peproni with mushroom</div>
-              <div class="score">0</div>
+              <div class="food-resipe">
+                <p class="content-resipe">pizza peproni with mushroom</p>
+              </div>
+              <div class="score">
+                <p class="score-name">Score <span id="get-score">0</span></p>
+              </div>
             </div>
           </header>
           <!-- Header End -->
@@ -36,7 +40,11 @@
             <div class="pizza-big-plate">
               <div class="pizza-food">
                 <div class="pizza-images">
-                  <img src="./image/Pizza-dough.png" alt="pizza" />
+                  <img
+                    src="./image/Pizza-dough.png"
+                    alt="pizza"
+                    class="pizza-dough-image"
+                  />
                 </div>
               </div>
             </div>
@@ -44,8 +52,29 @@
           <!-- End Pizza place cook of food-->
           <!-- Start Pizza ingredients container-->
           <mian class="pizza-ingredients-contaier">
-            <div class="num1">
-              <img src="./image/cheese.png" alt="cheese" class="cheese-img" />
+            <div class="pizza-ingredients-box">
+              <div class="num1 pizza-ingredients-images">
+                <img
+                  src="./image/cheese.png"
+                  alt="cheese"
+                  class="cheese-img ingredients"
+                />
+                <img
+                  src="./image/ketchup.png"
+                  alt="ketchup"
+                  class="ketchup-img ingredients"
+                />
+                <img
+                  src="./image/pepperoni1.png"
+                  alt="pepperoni"
+                  class="pepperoni-img ingredients"
+                />
+                <img
+                  src="./image/mushroom.png"
+                  alt="mushroom"
+                  class="mushroom-img ingredients"
+                />
+              </div>
             </div>
           </mian>
           <!-- End Pizza ingredients container-->
