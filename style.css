@@ -14,33 +14,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100vh;
+  background-color: #62a5a5;
 }
-.box-container {
+.food-box-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  text-align: center;
+  max-width: 50vw;
+  position: relative;
+  background-image: url("./image/kitchen.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  height: 70vh;
 }
 /* Styling Header */
 .header {
+  /* background-color: #bda3b0; */
   display: flex;
   width: 100%;
+  align-items: flex-start;
 }
-.pizza-header-content {
+.food-header-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
   /* gap: 70px; */
   width: 100%;
 }
-.num1 {
-  display: flex;
-  justify-content: center;
+.table-food-image {
+  width: 100%;
 }
-.pizza-ingredients-contaier img {
+/* Palte styleing  */
+.table-food-image img {
+  width: 100%;
+  /* padding: 0 6.4rem; */
+  /* height: 20vh; */
+  border: 1px solid red;
+}
+img {
   width: 10%;
   text-align: center;
 }
