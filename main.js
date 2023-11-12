@@ -1,3 +1,5 @@
+alert("خمن مكونات الاطعمه قبل انتهاء الوقت");
+
 // Get all Variables
 //1. Images
 let foodImage = document.querySelectorAll(".food-img");
@@ -16,7 +18,7 @@ let recipeElement = document.querySelector(".content-resipe");
 let timeLeft = document.querySelector(".timer");
 let btn = document.querySelector(".btn");
 //===========================================================
-let score = 0;
+let score = -1;
 // Events listener
 btn.addEventListener("click", randomRecipe);
 
@@ -126,6 +128,8 @@ function checkRecipe() {
   // Reset selected ingredients and clear the div box
   selectedIngredients = [];
   divBox.innerHTML = "";
+
+  return isCorrect;
 }
 
 // Scor
@@ -137,20 +141,21 @@ function updatScore() {
   let getScore = document.querySelector("#get-score");
   getScore.textContent = score;
 }
+let countDown;
+let timer = 15;
 
 // Timer
-let timer = 10;
-let intervalId = setInterval(() => {
-  timer--;
-  timeLeft.textContent = timer;
 
-  if (timer === 0) {
-    clearInterval(intervalId);
-    btn.disabled = true;
-    checkRecipe();
-  }
-}, 1000);
-
+function showTimer() {
+  countDown = setInterval(function () {
+    timer--;
+    timeLeft.textContent = timer;
+    if (timer <= 0) {
+      clearInterval(countDown);
+      alert(`Game over you got ${score}`);
+    }
+  }, 1000);
+}
 // Random challenges recipe food
 const recipeRandom = ["توست جبن", "بيتزا بيبروني", "سلطة خضار"];
 
@@ -163,3 +168,4 @@ function randomRecipe() {
 
 // Call randomRecipe function to set initial recipe
 randomRecipe();
+showTimer();

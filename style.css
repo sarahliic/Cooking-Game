@@ -19,6 +19,7 @@ body {
   /* border: 1px solid red; */
   height: 100vh;
   background-color: #62a5a5;
+  position: relative;
 }
 
 /* Header Styling */
@@ -30,7 +31,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 20vh;
+  /* height: 20vh; */
   width: 100%;
   /* border: 1px solid blue; */
 }
@@ -58,7 +59,7 @@ body {
   margin: 1rem 0;
   cursor: pointer;
 }
-/* Add these styles after your existing CSS */
+Add these styles after your existing CSS
 
 /* Container and row styles */
 .section-container {
@@ -112,18 +113,21 @@ body {
 }
 
 /* Button styles */
-.btn {
-  background-color: #f38520;
+.food-place-box .btn {
+  background-color: #434343;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  position: absolute;
+  left: 80%;
 }
 
-.btn:hover {
-  background-color: #e5700f;
+.food-place-box .btn:hover {
+  background-color: #809190;
+  color: white;
 }
 
 /* Timer styles */
