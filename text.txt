@@ -58,3 +58,44 @@
   item.ondragstart = function () {
     return false;
   };
+
+
+  ================================================
+    <!-- Food place cook of food Start -->
+          <main class="food-place-cook">
+            <!-- Big plate of food -->
+            <div class="food-big-plate">
+              <div class="table-food-image">
+                <!-- <img src="./image/download.jpg" alt="table" /> -->
+              </div>
+            </div>
+          </main>
+          <!-- End food place cook of food-->
+          <!-- Start food ingredients container-->
+          <mian class="food-ingredients-contaier">
+            <div class="food-ingredients-box">
+              <div class="num1 food-ingredients-images">
+                <img
+                  src="./image/cheese.png"
+                  alt="cheese"
+                  class="cheese-img ingredients"
+                />
+                <img
+                  src="./image/ketchup.png"
+                  alt="ketchup"
+                  class="ketchup-img ingredients"
+                />
+                <img
+                  src="./image/pepperoni1.png"
+                  alt="pepperoni"
+                  class="pepperoni-img ingredients"
+                />
+                <img
+                  src="./image/mushroom.png"
+                  alt="mushroom"
+                  class="mushroom-img ingredients"
+                />
+              </div>
+            </div>
+          </mian>
+          <!-- End Pizza ingredients container-->

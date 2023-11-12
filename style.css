@@ -6,9 +6,11 @@
 html,
 body {
   height: 100vh;
+  /* overflow: hidden; */
 }
 .section-container {
   min-height: 100vh;
+  background-color: #62a5a5;
 }
 .div-container {
   display: flex;
@@ -18,47 +20,120 @@ body {
   height: 100vh;
   background-color: #62a5a5;
 }
-.food-box-container {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  flex-direction: column;
-  /* border: 1px solid blue; */
-  text-align: center;
-  max-width: 50vw;
-  position: relative;
-  background-image: url("./image/kitchen.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 15px;
-  height: 70vh;
-}
-/* Styling Header */
+
+/* Header Styling */
 .header {
-  /* background-color: #bda3b0; */
   display: flex;
   width: 100%;
-  align-items: flex-start;
 }
 .food-header-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* gap: 70px; */
+  height: 20vh;
   width: 100%;
+  /* border: 1px solid blue; */
 }
-.table-food-image {
-  width: 100%;
+/* Place food styling */
+.food-place-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
 }
-/* Palte styleing  */
-.table-food-image img {
-  width: 100%;
-  /* padding: 0 6.4rem; */
-  /* height: 20vh; */
-  border: 1px solid red;
+.brown-color {
+  background-color: #f38520;
+  /* padding: 7rem; */
+  width: 60%;
 }
-img {
-  width: 10%;
+
+/* Styling ingredints-food */
+.ingredints-food {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   text-align: center;
+}
+.ingredints-food img {
+  width: 20%;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+/* Add these styles after your existing CSS */
+
+/* Container and row styles */
+.section-container {
+  padding: 2rem;
+}
+
+.food-place-box {
+  margin-top: 2rem;
+}
+
+/* Header styles */
+.header {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.timeleft,
+.food-resipe,
+.score {
+  flex: 1;
+  text-align: center;
+}
+
+.timer-left-box,
+.score-name {
+  font-weight: bold;
+}
+
+/* Ingredients styles */
+.ingredints-food {
+  margin-top: 2rem;
+}
+
+.food-box-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-img {
+  width: 80%;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.food-img:hover {
+  transform: scale(1.1);
+}
+
+/* Button styles */
+.btn {
+  background-color: #f38520;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e5700f;
+}
+
+/* Timer styles */
+.timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Score styles */
+#get-score {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
